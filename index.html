@@ -6,15 +6,15 @@
     <title>Python Sandbox</title>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #222; color: white; }
         textarea { width: 80%; height: 80px; font-size: 14px; }
-        button { margin: 10px; padding: 10px; font-size: 16px; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; text-align: left; }
+        button { margin: 10px; padding: 8px; font-size: 14px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; text-align: left; color: black; }
     </style>
 </head>
 <body>
     <h2>Python Code im Browser ausführen</h2>
-    <textarea id="python-code">print("Test")</textarea><br>
+    <textarea id="python-code">x = "Test"\nprint(x)</textarea><br>
     <button onclick="runPython()">Ausführen</button>
     <pre id="output">Ergebnis wird hier angezeigt...</pre>
 
