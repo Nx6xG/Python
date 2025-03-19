@@ -7,14 +7,15 @@
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 10px; background-color: #222; color: white; }
-        textarea { width: 90%; min-height: 30px; max-height: 200px; font-size: 10px; resize: none; overflow: hidden; }
-        button { margin: 5px; padding: 5px; font-size: 10px; }
-        pre { background: #f4f4f4; padding: 5px; border-radius: 3px; text-align: left; color: black; font-size: 10px; }
+        textarea { width: 90%; min-height: 30px; max-height: 200px; font-size: 16px; resize: none; overflow: hidden; }
+        button { margin: 5px; padding: 8px; font-size: 14px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; text-align: left; color: black; font-size: 14px; }
+        h3 { font-size: 20px; }
     </style>
 </head>
 <body>
     <h3>Python Code</h3>
-    <textarea id="python-code" oninput="adjustHeight(this)">print("Test")</textarea><br>
+    <textarea id="python-code" oninput="adjustHeight(this)">x = "Test"\nprint(x)</textarea><br>
     <button onclick="runPython()">▶ Ausführen</button>
     <pre id="output">Ergebnis wird hier angezeigt...</pre>
 
